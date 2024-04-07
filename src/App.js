@@ -6,7 +6,9 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
 import Chatapp from "./pages/Chatapp";
+import Events from "./components/events";
 import Clubs from "./components/Clubs";
+
 
 function App() {
   const { currentUser } = useContext(AuthContext);
@@ -34,6 +36,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
           <Route path="chat" element={<Chatapp />} />
+          <Route path="events" element={<Events />} />
           <Route path="clubs" element={<Clubs />} />
         </Route>
       </Routes>

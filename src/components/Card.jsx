@@ -1,13 +1,12 @@
 import React from 'react';
 import "./Card.css";
 
-
 function Card(props) {
   return (
     <section className="nft-container">
       {/* Container Image */}
       <div className="container-image">
-        <div className="main-image" />
+        <div className="main-image"  > <img src={props.src} alt="" /></div>
         <div className="color-image" />
       </div>
       {/* Container Title */}

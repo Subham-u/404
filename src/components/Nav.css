@@ -1,6 +1,6 @@
 :root {
 	--primary: #0091ff;
-	--dark: #061b28;
+	--dark: hsl(217, 54%, 11%);
 	--gray: #756388;
 	--light: #ffffff;
 }
@@ -22,7 +22,7 @@ code {
 
 
 .side-nav-container {
-	background-color: var(--dark);
+	background-color: hsl(217, 54%, 11%);
 	width: 300px;
 	height: 100vh;
 	position: relative;

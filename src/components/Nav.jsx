@@ -3,6 +3,7 @@ import {signOut} from "firebase/auth"
 import { auth } from '../firebase'
 import { AuthContext } from '../context/AuthContext'
 import "./Nav.css";
+import Events from "./events";
 
 
 const Nav = () => {
@@ -20,13 +21,14 @@ const Nav = () => {
 			route: "./chat"
 		},
 		{
-			text: "Clubs",
+			text: "Events",
 			icon: "icons/pie-chart.svg",
-			route: "./clubs"
+			route: "./events"
 		},
 		{
-			text: "File Manager",
+			text: "Clubs",
 			icon: "icons/folder.svg",
+			route: "./clubs"
 		},
 		{
 			text: "Saved Items",
@@ -95,7 +97,6 @@ const Nav = () => {
 					<img src={currentUser.photoURL} alt="" />
 						<div className="nav-footer-info">
 							<p className="nav-footer-user-name">{currentUser.displayName}</p>
-							<p className="nav-footer-user-position">store admin</p>
 						</div>
 					</div>
 				)}

@@ -1,5 +1,4 @@
-import "./clubs.css";
-import "./preloader.css";
+import "./Clubs.css";
 
 function Club(props) {
     return (

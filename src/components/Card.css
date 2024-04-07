@@ -37,18 +37,20 @@ body::-webkit-scrollbar {
     line-height: 250%;
 }
 
-.main-image {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8TGTgXDxxxQUg0c_Rojhz-DP3siukfgSAT2v590vNmg&s");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  height: 100%;
-  min-height: 12.75rem;
-  width: 100%;
+.main-image img {
+
+  height: 150px;
+  width: 150px;
   border-radius: 10px;
   box-shadow: black 0px 0px 1ch 0px;
+  margin-left: 25px;
 }
-
+.nft-container:hover{
+  box-shadow: yellow 0px 0px 1ch 0px;
+}
+.main-image img:hover{
+  box-shadow: yellowgreen 0px 0px 2ch 0px;
+}
 /** Container Title **/
 .container-title {
   padding-top: 0.3rem;

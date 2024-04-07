@@ -1,22 +1,31 @@
-import React from 'react'
-// import Sidebar from '../components/Sidebar'
-// import Chat from '../components/Chat'
-import Nav from '../components/Nav'
-import Cards from '../components/Cards'
-import Calendar from '../components/Calender'
-import Clubs from '../components/Clubs'
+import React, { useEffect } from 'react';
+import Nav from '../components/Nav';
+import Cards from '../components/Cards';
+import Calender from '../components/Calender';
+import "../components/preloader.css";
+import Clubs from '../components/Clubs';
+import NotificationPanel from "../components/NotificationPanel";
+
 const Home = () => {
 
-  let preloader =document.getElementsByClassName("loading");
-      setTimeout(function(){
-          preloader[1].style.display = "none";
-          console.log(preloader)
-      },5000)
+  useEffect(() => {
+    const preloader = document.getElementsByClassName("loading");
+    setTimeout(function(){
+      preloader[0].style.display = "none";
+    }, 3000);
 
-  return (<>
+    const main = document.getElementById("main");
+    setTimeout(function(){
+      main.style.display = "block";
+    }, 3000);
+  }, []);
 
-     {/* <div className="loading">
-        <div className="logo"><img src="/images/welcome-3688628-3231459.webp" alt="" style={{width: '350px'}} /></div>
+  return (
+    <>
+      <div className="loading" style={{
+
+      }}>
+        <div className="logo"><img src="https://cdni.iconscout.com/illustration/premium/thumb/welcome-3688628-3231459.png?f=webp" alt="" style={{width: '350px'}} /></div>
         <div className="dots animate">
           <div className="dot" />
           <div className="dot" />
@@ -24,23 +33,22 @@ const Home = () => {
           <div className="dot" />
           <div className="dot" />
         </div>
-      </div> */}
+      </div>
 
-
-    <div >
-    <div className="container flex-row">
-      <div className="nav"><Nav /></div>
-      <div className="flex-col">
-        <div className="cards"><Cards /></div>
-        <div className="flex-row">
-          <div className="announcements" ></div>
-          <div className="calender" ><Calendar/></div>
+      <div id="main" style={{ display: 'none' }}>
+        <div className="container-home flex-row">
+          <div className="nav"><Nav /></div>
+          <div className="flex-col">
+            <div className="cards"><Cards /></div>
+            <div className="flex-row">
+              <div className="announcements"><NotificationPanel/></div>
+              <div className="calendar"><Calender /></div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
