@@ -364,43 +364,39 @@ margin-top: 10px;
 margin-right: 10px;
 }
 
-.events{
-  height: 48vh;
-  width: 25vw;
-  background-color: aqua;
-}
+
 .calender{
   height: 48vh;
-  width: 60vw;
-  background-color: brown;
+  width: 50vw;
 }
 .announcements{
   height: 48vh;
-  width: 25vw;
-  background-color: black;
+  width: 45vw;
+  background-color: rgb(255, 255, 255);
+
 }
 .flex-col{
 
   display:flex;
   flex-direction: column;
+  align-content: space-between;
   gap: 20px;
-}
-
-body{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0;
 
 }
+
 .flex-row{
-  width: 85vw;
+  width: 90vw;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
 .container{
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: space-between;
+}
+.calender{
+  position: relative;
+  left: 50px;
+
 }

@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
   border-radius: 10px;
   background-color: var(--card-background);
     width: 200px;
-    margin-top: 20px;
+    margin-top: 6px;
     line-height: 250%;
 }
 
@@ -158,11 +158,3 @@ body::-webkit-scrollbar {
   }
 }
 
-/** Media Queries **/
-
-@media screen and (max-width: 600px) {
-  /** Main Container **/
-  .main-container {
-    margin-top: 3.75rem;
-  }
-}

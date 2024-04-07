@@ -30,6 +30,7 @@ code {
 	transition: 0.4s;
 	z-index: 1000;
 	margin-right: 3rem;
+
 }
 .side-nav-container-NX {
 	width: 85px;
@@ -121,13 +122,14 @@ code {
 .menu-item {
 	align-items: center;
 	text-align: center;
-	height: 57px;
+	height: 75px;
 	display: flex;
 	color: var(--light);
 	text-decoration: none;
 	text-transform: uppercase;
 	margin: auto 20px;
 	border-radius: 10px;
+
 }
 
 .menu-item-NX {

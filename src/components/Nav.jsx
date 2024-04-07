@@ -15,19 +15,14 @@ const Nav = () => {
 			route: "/"
 		},
 		{
-			text: "Admin Profile",
-			icon: "icons/user.svg",
-			route: "./profile"
-		},
-		{
 			text: "Messages",
 			icon: "icons/message.svg",
 			route: "./chat"
 		},
 		{
-			text: "Analytics",
+			text: "Clubs",
 			icon: "icons/pie-chart.svg",
-			route: "./chat"
+			route: "./clubs"
 		},
 		{
 			text: "File Manager",
@@ -36,6 +31,11 @@ const Nav = () => {
 		{
 			text: "Saved Items",
 			icon: "icons/heart.svg",
+		},
+        {
+			text: "Admin Profile",
+			icon: "icons/user.svg",
+			route: "./profile"
 		},
 		{
 			text: "Settings",
